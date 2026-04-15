@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e3e2e1",
+                    "surface-container": "#efeeed",
+                    "on-background": "#1a1c1c",
+                    "surface-container-highest": "#e3e2e1",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#261a00",
+                    "on-secondary-container": "#715300",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "surface-dim": "#dadad9",
+                    "secondary-container": "#ffc63d",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f4f3f2",
+                    "tertiary": "#242525",
+                    "primary-fixed": "#ffdad9",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-high": "#e9e8e7",
+                    "outline": "#8c7070",
+                    "outline-variant": "#e0bfbe",
+                    "secondary-fixed": "#ffdf9e",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#795900",
+                    "on-surface-variant": "#584141",
+                    "inverse-primary": "#ffb3b2",
+                    "tertiary-container": "#3a3a3a",
+                    "on-tertiary-container": "#a5a4a3",
+                    "surface-tint": "#ae2e39",
+                    "surface": "#faf9f8",
+                    "on-primary-fixed": "#410009",
+                    "surface-bright": "#faf9f8",
+                    "on-primary-container": "#ff7b7f",
+                    "secondary-fixed-dim": "#f6be35",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f1f0ef",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "on-surface": "#1a1c1c",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#e4e2e1",
+                    "background": "#faf9f8",
+                    "primary": "#51000d",
+                    "primary-container": "#7a0019",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Inter"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .tonal-shift-surface-container-low { background-color: #f4f3f2; }
+        .tonal-shift-from-surface-to-container-low { background-color: #f4f3f2; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl tonal-shift-surface-container-low">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50">BizDogs</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors duration-300" href="index.html">Home</a>
+<a class="text-red-900 dark:text-red-400 border-b-2 border-yellow-500 pb-1 font-bold transition-colors duration-300" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors duration-300" href="events.html">Events</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 transition-colors duration-300" href="#">Join Us</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-xl text-sm font-bold tracking-wide uppercase transition-all hover:scale-95 duration-150 ease-in-out shadow-lg shadow-primary/10">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 lg:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<p class="text-sm font-bold uppercase tracking-[0.2em] text-secondary mb-4">The Collegiate Curator</p>
+<h1 class="text-6xl md:text-8xl font-black tracking-tight text-on-surface leading-[0.9] mb-8">
+                        Architecting <span class="text-primary-container">Future</span> Leaders.
+                    </h1>
+<div class="h-1 w-24 bg-secondary-container mb-8"></div>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        BizDogs is the premier pre-business collegiate community designed to bridge the gap between academic theory and high-stakes professional reality. We curate experiences that transform students into industry-ready visionaries.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl translate-x-4 translate-y-4">
+<img class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Modern university study lounge with students collaborating in a high-end, clean academic environment with large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM4wg_ZmqOwZONciItEXdXVWPR3VMeLaagpWTcRYHufcYNXrNFDcACHVswITcQD7WuECI_e_XzRPqpHO8JbR-UrIrFxx0XYKMCuUaj3mP6Xu7DQFX17UixZakbngsqOiBxG9mKlDrXZm9uBooAFdAIVk6HAMraNY8bLBe5DuzN1QOiFt3j8CCMhlOUxt_Tf_EXXKQ-W4SURyQnlb74HGpCPDMJfxRCMjbdz9gWOG4Qb50Q1tUPuXcN0BOL-gUHHRKjSdkU00ib0ehk"/>
+</div>
+<div class="absolute inset-0 border-2 border-outline-variant -translate-x-4 -translate-y-4 rounded-xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Program Description -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">assured_workload</span>
+<h3 class="text-2xl font-bold tracking-tight">Academic Rigor</h3>
+<p class="text-on-surface-variant leading-relaxed">Structured mentorship programs and peer-led study cohorts focused on competitive business curricula and technical proficiency.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">groups</span>
+<h3 class="text-2xl font-bold tracking-tight">Elite Networking</h3>
+<p class="text-on-surface-variant leading-relaxed">Direct access to a network of high-performing alumni and industry professionals across finance, consulting, and tech.</p>
+</div>
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">diversity_2</span>
+<h3 class="text-2xl font-bold tracking-tight">Inclusive Community</h3>
+<p class="text-on-surface-variant leading-relaxed">A student-led ecosystem that prioritizes growth, collaboration, and professional ambition in a supportive club environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet Your Leaders -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="mb-20 text-center max-w-2xl mx-auto">
+<p class="text-sm font-bold uppercase tracking-[0.2em] text-secondary mb-2">Leadership</p>
+<h2 class="text-5xl font-black tracking-tight text-on-surface">Meet Your Leaders</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Sam Ashby -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional headshot of Sam Ashby, a young man with a confident smile, wearing a modern business casual outfit against a neutral background" src="https://lh3.googleusercontent.com/aida/ADBb0ug-_2xFjLOSz7i9hSg3jndqLd_RXH4dautFWFVL9Agqo-CrDNPw2UGffQNPuG67peJLYTqaNdTjK0zoFrLKm5AuT3igAcLB7-cfEDDkzktuT9xdjKpaxeD0s5FRSm5MTECDt-Nk5JfKh4xm34ZSbnrv3KnCKZqfj7PY5lhCc5XUaDf34lz29hFfenKCYprK0pYJI6064BywHfxoFOON74vmKyjUCGrBMWnPaQtV4xgF6-z8VMEfBB5PZDKfVGo9XGrTgvL_w2XRrkQ"/>
+</div>
+<h4 class="text-xl font-bold">Sam Ashby</h4>
+<p class="text-primary font-medium text-sm uppercase tracking-wider">President</p>
+</div>
+<!-- Caleb Cooley -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional headshot of Caleb Cooley, a young man with focused expression, dressed in collegiate professional attire" src="https://lh3.googleusercontent.com/aida/ADBb0ujS6__qAmJdwoKgXG8tX78LJoxUg2168H2-zfQhirZZCIvrO6t9Fkh2GpLMxXUQGdzyERPalaDrxFisiHoA-wdlpkirpOsUetInVQLapCdVeiqYZj0Kf8upQwB1xy2cNXy_t-CCQmJhtIwVuacOEdTVLKilhy6GXtjyiUcbakHdzkK04gpipIFyoBGY4Av32e7RnqaGzjIJvqYTypRSIiiP0gM-SqMzDpauO1rb_5xuuIYlQL1E5ZWytwv1A5eRP4mL1U5PsXMX1A"/>
+</div>
+<h4 class="text-xl font-bold">Caleb Cooley</h4>
+<p class="text-primary font-medium text-sm uppercase tracking-wider">Vice President</p>
+</div>
+<!-- Madi Welborn -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional headshot of Madi Welborn, a young woman with a friendly professional demeanor, styled in business casual attire" src="https://lh3.googleusercontent.com/aida/ADBb0uiDEW1iy7DuSr8qfcdB_hUGZG24kLI-2j4c2oI8DLEfsaYtEpeGY4McFzYraK4TOSEMFUE7hPsuxtArI0QM0XGibM3gsL5jt-L-uh6HKYWeJr1G93kLZL_fZbwTz-Ziv4KU0U6qtPvNGy5dlxTRup_QG82iZoFoicmGLwACZydEbCHlK26VPHeNQYyuXhAjq6SpeH4p-e9Q4DvuFPDu-Z-xXERhpXw6wOR8sTaL83XuldVePC3viOaVFlWiCtPxZQQN_hgaFkDCNOE"/>
+</div>
+<h4 class="text-xl font-bold">Madi Welborn</h4>
+<p class="text-primary font-medium text-sm uppercase tracking-wider">Treasurer</p>
+</div>
+<!-- Kirsten Prinsen -->
+<div class="group">
+<div class="aspect-square rounded-xl overflow-hidden mb-6 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Professional headshot of Kirsten Prinsen, a young woman with a sharp, professional look, against a clean studio background" src="https://lh3.googleusercontent.com/aida/ADBb0ujFElsabf58cxgr4N7WjgdguXNZydeTUscmDUkm_Ddu2uxkUNjWaR3Rnm_hWgTCbNwUvZu7XRTdMO9jYMrq9oBpqpeGtjGYhCbjAA1MR5IOJ-ua9MZbd0j0BoN4JAzPUBDQEj50xVex5zfwuuuSVQSL1w4XHx0d6tlPss2nt700jUsIN4lj7U2Bx4TbGPXljwVDeuSjeEr1PBQW2-9yWHdnwEAzEgJLnMGC2L14KYc9fZzsWhN5GeTtnWvpqca2MCNDlBEUCtpRoA"/>
+</div>
+<h4 class="text-xl font-bold">Kirsten Prinsen</h4>
+<p class="text-primary font-medium text-sm uppercase tracking-wider">Secretary</p>
+</div>
+</div>
+</section>
+<!-- Member Testimonials -->
+<section class="bg-surface-container py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<p class="text-sm font-bold uppercase tracking-[0.2em] text-secondary mb-2">Voices of the Pack</p>
+<h2 class="text-5xl font-black tracking-tight text-on-surface">Member Testimonials</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Sam -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<div class="flex items-start gap-4 mb-8">
+<div class="w-1 bg-primary h-12"></div>
+<span class="text-6xl font-serif text-outline-variant absolute right-8 top-8">"</span>
+</div>
+<p class="text-lg italic text-on-surface mb-8 leading-relaxed">"BizDogs gave me the network and the confidence to land my dream internship at a top-tier consulting firm. The community is unmatched."</p>
+<div class="flex items-center gap-4">
+<div>
+<p class="font-bold">Sam</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Class of 2024</p>
+</div>
+</div>
+</div>
+<!-- Caleb -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<div class="flex items-start gap-4 mb-8">
+<div class="w-1 bg-primary h-12"></div>
+<span class="text-6xl font-serif text-outline-variant absolute right-8 top-8">"</span>
+</div>
+<p class="text-lg italic text-on-surface mb-8 leading-relaxed">"I came for the professional development, but I stayed for the people. BizDogs is more than a club; it's a family of high-achievers."</p>
+<div class="flex items-center gap-4">
+<div>
+<p class="font-bold">Caleb</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Class of 2025</p>
+</div>
+</div>
+</div>
+<!-- Anonymous -->
+<div class="bg-surface-container-lowest p-10 rounded-xl relative">
+<div class="flex items-start gap-4 mb-8">
+<div class="w-1 bg-primary h-12"></div>
+<span class="text-6xl font-serif text-outline-variant absolute right-8 top-8">"</span>
+</div>
+<p class="text-lg italic text-on-surface mb-8 leading-relaxed">"Being part of this community transformed my college experience. The workshops are professional-grade and the support is genuine."</p>
+<div class="flex items-center gap-4">
+<div>
+<p class="font-bold">Anonymous</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Finance Major</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-5xl mx-auto px-8 py-32 text-center">
+<h2 class="text-5xl font-black tracking-tight mb-8">Ready to join the pack?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto leading-relaxed">
+                Applications for the next cohort are currently open. We are looking for ambitious students who want to redefine what's possible in business.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-xl font-bold uppercase tracking-widest transition-all hover:shadow-xl hover:scale-105 duration-200">
+                    Apply Now
+                </button>
+<button class="border-2 border-outline-variant text-on-surface px-10 py-4 rounded-xl font-bold uppercase tracking-widest transition-all hover:bg-surface-container-low duration-200">
+                    Download Prospectus
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-auto bg-stone-100 dark:bg-stone-900 tonal-shift-from-surface-to-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<div>
+<div class="text-xl font-black text-stone-800 dark:text-stone-200 mb-6">BizDogs</div>
+<p class="text-stone-500 dark:text-stone-400 text-sm max-w-xs leading-relaxed Inter">
+                        The elite pre-business collegiate community fostering excellence through mentorship, networking, and leadership.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-8 md:justify-end">
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100 text-sm font-medium Inter" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100 text-sm font-medium Inter" href="#">Terms of Service</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100 text-sm font-medium Inter" href="#">Contact</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100 text-sm font-medium Inter" href="#">Directory</a>
+</div>
+</div>
+<div class="pt-8 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-stone-500 dark:text-stone-400 text-sm Inter">© 2024 BizDogs Collegiate Community. All rights reserved.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">hub</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-primary cursor-pointer transition-colors">mail</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

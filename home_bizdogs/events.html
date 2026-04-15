@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e3e2e1",
+                    "surface-container": "#efeeed",
+                    "on-background": "#1a1c1c",
+                    "surface-container-highest": "#e3e2e1",
+                    "primary-fixed-dim": "#ffb3b2",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#261a00",
+                    "on-secondary-container": "#715300",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c8c6c6",
+                    "surface-dim": "#dadad9",
+                    "secondary-container": "#ffc63d",
+                    "on-tertiary-fixed-variant": "#474747",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f4f3f2",
+                    "tertiary": "#242525",
+                    "primary-fixed": "#ffdad9",
+                    "on-tertiary-fixed": "#1b1c1c",
+                    "inverse-surface": "#2f3130",
+                    "surface-container-high": "#e9e8e7",
+                    "outline": "#8c7070",
+                    "outline-variant": "#e0bfbe",
+                    "secondary-fixed": "#ffdf9e",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#795900",
+                    "on-surface-variant": "#584141",
+                    "inverse-primary": "#ffb3b2",
+                    "tertiary-container": "#3a3a3a",
+                    "on-tertiary-container": "#a5a4a3",
+                    "surface-tint": "#ae2e39",
+                    "surface": "#faf9f8",
+                    "on-primary-fixed": "#410009",
+                    "surface-bright": "#faf9f8",
+                    "on-primary-container": "#ff7b7f",
+                    "secondary-fixed-dim": "#f6be35",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f1f0ef",
+                    "on-primary-fixed-variant": "#8d1324",
+                    "on-surface": "#1a1c1c",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#e4e2e1",
+                    "background": "#faf9f8",
+                    "primary": "#51000d",
+                    "primary-container": "#7a0019",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Public Sans"],
+                    "body": ["Inter"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 40px 60px -20px rgba(26, 28, 28, 0.06);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #51000d 0%, #7a0019 100%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-stone-900 dark:text-stone-50">BizDogs</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 dark:hover:text-red-300 transition-colors duration-300" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 dark:hover:text-red-300 transition-colors duration-300" href="aboutus.html">About Us</a>
+<a class="text-red-900 dark:text-red-400 border-b-2 border-yellow-500 pb-1 font-bold hover:text-red-800 dark:hover:text-red-300 transition-colors duration-300" href="#">Events</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-800 dark:hover:text-red-300 transition-colors duration-300" href="#">Join Us</a>
+</div>
+<button class="primary-gradient text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm tracking-wide hover:scale-95 duration-150 ease-in-out">
+                Apply Now
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 py-16 md:py-24 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 z-10">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-secondary font-bold block mb-4">Curated Experiences</span>
+<h1 class="font-headline text-5xl md:text-7xl font-black text-on-surface tracking-tight leading-[0.95] mb-8">
+                    Elevate Your <br/> Professional <span class="text-primary">Trajectory.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                    Access exclusive corporate tours, community-driven service events, and elite mentorship nights designed for the next generation of business leaders.
+                </p>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform md:translate-x-4 md:-translate-y-4">
+<img class="w-full h-full object-cover" data-alt="Three business students smiling while holding personalized event posters at a networking gathering." src="https://lh3.googleusercontent.com/aida/ADBb0uiEVdo6IBMvQa_j1lgCjXWruquC_ZM40ZQWLbtc-QNjf8s6-K42_gBhig8rvQAzMsMHCsEt__DvqFOp02qHS77sa0vYqsN644Tq0KoRSLb1cV-NbtNoUMoPgQVaR9bgSL6wtkvDI6M3pWzbAFgGFwAK1wuSI8j2LUYVvtuZvJKtjhDF2c_fPlOdjlEyXVcfFrN7lRyFvGk3gz5Dd4cYfE4K9jLI6AHBuvCI-7N2NmFLTJFnPwTkLsf7YzdUXAQJPDPlhpdrx6_n-w"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-6 rounded-xl hidden md:block editorial-shadow">
+<p class="font-headline font-black text-3xl text-on-secondary-container">12+</p>
+<p class="font-label text-xs uppercase tracking-widest text-on-secondary-container font-bold">Monthly Events</p>
+</div>
+</div>
+</header>
+<!-- Featured Events Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-secondary font-bold">Upcoming Highlights</span>
+<h2 class="font-headline text-4xl font-black text-on-surface mt-2">Signature Experiences</h2>
+</div>
+<div class="h-px flex-grow bg-outline-variant/30 mx-8 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Event 1: Essentia Health Tour -->
+<div class="group relative flex flex-col bg-surface-container-low rounded-xl overflow-hidden transition-all hover:translate-y-[-4px]">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="professional medical office building exterior with sleek glass design and manicured landscaping under clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7VjZkgyT4rmx46IZIcf-sAMPg2XTnjG1cnD1Sti8SFoN3piijo_apJqlzY7hiyk-CttH4xgeRZvfDhEgCqO9BjSQANrVvXkWZDwcxeDbiKZn6ekjhZ9Mlvb8-JKUCMXnnv39ZxhumwoIwTc2Ysaa0jkkwmcaRdgMxMUQjIhMk5xVF3KQTWJqAyDvBrMmvC6pGqvgRhO3IzHgH2rcWj47Kbd9hC10YN72bz6ztXKjYspzXswdXGWPNk2nYh_8LwJKcxIiZhnIMf6Ca"/>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold font-label uppercase">Corporate Tour</span>
+<span class="text-on-surface-variant text-sm font-medium">Oct 14</span>
+</div>
+<h3 class="font-headline text-2xl font-black text-on-surface mb-3">Essentia Health HQ Visit</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">Go behind the scenes of healthcare administration and witness the business side of medical excellence.</p>
+<div class="mt-auto pt-6 flex items-center justify-between border-t border-outline-variant/20">
+<span class="text-xs font-bold text-on-surface/60 uppercase tracking-tighter">Limited Capacity</span>
+<button class="text-secondary font-bold text-sm underline decoration-secondary-fixed decoration-2 underline-offset-4 hover:decoration-secondary">Register</button>
+</div>
+</div>
+</div>
+<!-- Event 2: CHUM Donation Drive (Large Feature) -->
+<div class="group relative md:col-span-2 lg:col-span-1 flex flex-col bg-tertiary text-on-tertiary rounded-xl overflow-hidden transition-all hover:translate-y-[-4px]">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="volunteers organizing crates of food and supplies in a well-lit community center with warm wooden textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJlWkiKhJuFwbWmrw6uSen2QVzA7xE3V7oDbfVUB_dP-An_-6vf1PDRMsb0ZGYN44wg240gX0fWSGMDCzWhiLAd8RX7clqsUZzI1GnhKPHFA0KjOz80xWe6SeoRpx5crGC8xoAI1GlMGldSUA9ke_PVeAqpBzj3EJUVAbkWcoX-JjT2qmptloFV74SYLLZa1cvOFxNhlin-7THWkkfIbZhKi_Hc-ThSloL6k1HIQ0Kn5ngEyHj1XpclxVaEFx3o-wB3RzB8dgPTBat"/>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold font-label uppercase">Community Impact</span>
+<span class="text-on-tertiary-container text-sm font-medium">Oct 22</span>
+</div>
+<h3 class="font-headline text-2xl font-black text-white mb-3">CHUM Winter Drive</h3>
+<p class="text-on-tertiary-container text-sm leading-relaxed mb-8">Join the collegiate community in supporting local families through our annual logistics and donation event.</p>
+<div class="mt-auto pt-6 flex items-center justify-between border-t border-white/10">
+<span class="text-xs font-bold text-on-tertiary/60 uppercase tracking-tighter">Volunteer Opportunity</span>
+<button class="text-secondary-fixed font-bold text-sm underline decoration-secondary decoration-2 underline-offset-4 hover:decoration-secondary-fixed">Join Team</button>
+</div>
+</div>
+</div>
+<!-- Event 3: MBA Mentorship Night -->
+<div class="group relative flex flex-col bg-surface-container-high rounded-xl overflow-hidden transition-all hover:translate-y-[-4px]">
+<div class="aspect-video overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="upscale dimly lit lounge with students and professionals in suits engaged in deep conversation over coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8EI5gbayfT9aE0iEpvwdXwakMZlLsigfVTXR5zCF6jFv1kcai9MReTs5cTXsMm0Nv9UiDWNjrSkDpKMuqqnKZWOFyxRUW3WrBI2nNe7iWCLHo2ZDaA0TLE_9VwuHHz7lKTn9hQKrl2cHt4zPH8OtFfnsdtPq6qqXBepaLfxiNfOU1zmAssfwHCI7vCQdkUf_JOvkzHLm5d8mPWPqz-pNlzyYfL2asgHa1rc9nQZTyXq3LbRfW6TTvJpPg4ASNs7Trtw_M8LXuScSN"/>
+</div>
+<div class="p-8 flex flex-col h-full">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold font-label uppercase">Elite Networking</span>
+<span class="text-on-surface-variant text-sm font-medium">Nov 05</span>
+</div>
+<h3 class="font-headline text-2xl font-black text-on-surface mb-3">MBA Mentorship Night</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8">An evening of high-stakes connection with top-tier MBA candidates and industry veterans.</p>
+<div class="mt-auto pt-6 flex items-center justify-between border-t border-outline-variant/20">
+<span class="text-xs font-bold text-on-surface/60 uppercase tracking-tighter">Exclusive Member Event</span>
+<button class="text-secondary font-bold text-sm underline decoration-secondary-fixed decoration-2 underline-offset-4 hover:decoration-secondary">RSVP</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Calendar Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<span class="font-label text-xs uppercase tracking-widest text-secondary font-bold block mb-4">Planning Ahead</span>
+<h2 class="font-headline text-4xl font-black text-on-surface mb-6 leading-tight">The Full Collegiate Calendar</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">Our semester is packed with opportunities to grow. Synchronize your schedule with the BizDogs pulse.</p>
+<button class="flex items-center gap-2 font-headline font-bold text-primary group">
+                            Download PDF Calendar
+                            <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="lg:col-span-2 space-y-4">
+<!-- Calendar Item -->
+<div class="bg-white p-6 rounded-xl flex items-center gap-8 editorial-shadow transition-transform hover:scale-[1.01]">
+<div class="text-center min-w-[60px]">
+<span class="block text-xs font-bold text-secondary uppercase font-label">Nov</span>
+<span class="block text-3xl font-black font-headline text-on-surface">12</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-lg text-on-surface">Ethics in FinTech Panel</h4>
+<p class="text-sm text-on-surface-variant">Labovitz Hall Auditorium • 6:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-on-surface/20">more_vert</span>
+</div>
+<!-- Calendar Item -->
+<div class="bg-white p-6 rounded-xl flex items-center gap-8 editorial-shadow transition-transform hover:scale-[1.01]">
+<div class="text-center min-w-[60px]">
+<span class="block text-xs font-bold text-secondary uppercase font-label">Nov</span>
+<span class="block text-3xl font-black font-headline text-on-surface">18</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-lg text-on-surface">LinkedIn Portrait Studio</h4>
+<p class="text-sm text-on-surface-variant">The Clubhouse Studio • 1:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-on-surface/20">more_vert</span>
+</div>
+<!-- Calendar Item -->
+<div class="bg-white p-6 rounded-xl flex items-center gap-8 editorial-shadow transition-transform hover:scale-[1.01]">
+<div class="text-center min-w-[60px]">
+<span class="block text-xs font-bold text-secondary uppercase font-label">Dec</span>
+<span class="block text-3xl font-black font-headline text-on-surface">02</span>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-lg text-on-surface">Winter Gala &amp; Awards</h4>
+<p class="text-sm text-on-surface-variant">Pier B Resort Ballroom • 7:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-on-surface/20">more_vert</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-5xl mx-auto px-8 py-24 text-center">
+<div class="bg-surface-container-highest p-12 md:p-20 rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-3xl md:text-5xl font-black text-on-surface mb-6">Never Miss a Connection.</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto mb-10">Get early access registration links and event updates delivered straight to your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary text-on-surface font-body outline-none" placeholder="Student Email Address" type="email"/>
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold tracking-wide hover:scale-105 transition-transform">Subscribe</button>
+</form>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-auto bg-stone-100 dark:bg-stone-900">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div>
+<div class="text-xl font-black text-stone-800 dark:text-stone-200 mb-2">BizDogs</div>
+<p class="text-stone-500 dark:text-stone-400 text-sm font-body max-w-xs">Building the bridge between academic ambition and professional excellence.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="text-stone-500 dark:text-stone-400 text-sm hover:text-stone-900 dark:hover:text-stone-100 transition-all opacity-80 hover:opacity-100" href="#">Directory</a>
+</div>
+<div class="text-stone-500 dark:text-stone-400 text-sm font-body">
+                © 2024 BizDogs Collegiate Community. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
